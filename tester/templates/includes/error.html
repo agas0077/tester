@@ -1,0 +1,7 @@
+{% if type == 'global' %}
+    {% for error in field %}<div class="p-1 alert alert-danger">{{ error|escape }}</div>{% endfor %}
+{% else %}
+    {% if field.errors %}
+        {% for error in field.errors %}<div class="p-1 alert alert-danger">{{ error|escape }}</div>{% endfor %}
+    {% endif %}
+{% endif %}

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+  Выход из системы
+{% endblock title %}
+{% block content %}
+  <div class="d-flex flex-column align-items-center">
+    <div class="col-4">{% include "includes/error.html" with field=form.non_field_errors type="global" %}</div>
+    <div class="animation">
+      <div class="animation__eye animation__eye--one-one"></div>
+      <div class="animation__eye animation__eye--one-two"></div>
+      <div class="animation__eye animation__eye--two-one"></div>
+      <div class="animation__eye animation__eye--two-two"></div>
+      <video class="animation__video" width="384" height="374" loop muted autoplay>
+        <source src="{% static 'video/watchers.mp4' %}" type="video/mp4"/>
+      </video>
+    </div>
+    <form method="post"
+          class="col-4"
+          {% if action_url %} action="{% url action_url %}" {% endif %}>
+      {% csrf_token %}
+      <div class="row row-cols-1">
+        {% include "includes/form_field.html" with name="username" type="text" id="id_username" field=form.username value=form.username.value %}
+        {% include "includes/form_field.html" with name="password" type="password" id="id_password" field=form.password value=form.password.value %}
+      </div>
+      <button type="submit" class="btn btn-primary btn-block mb-4 col-12">Войти</button>
+      <div class="text-center">
+        <p>
+          Нет аккаунта? <a href={% url 'users:signup' %}>Регистрация</a>
+        </p>
+      </div>
+    </form>
+    <p class="about">
+      * использован фрагмент <a href="https://vasya-lozhkin.ru/pictures/rodina-slyshit/">картины Васи Ложкина</a>
+    </p>
+  </div>
+  <script src="{% static 'js/login.js'%}"></script>
+  <link href="{% static 'css/login.css' %}" rel="stylesheet"/>
+{% endblock content %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}
+    Зарегистрироваться
+{% endblock title %}
+{% block content %}
+    <div class="d-flex justify-content-center">
+        <form method="post"
+              class="col-8"
+              {% if action_url %} action="{% url action_url %}" {% endif %}>
+            {% csrf_token %}
+            {% for i in '012345'|make_list %}{% endfor %}
+            <!-- Email input -->
+            <div class="row row-cols-2">
+                {% include "includes/form_field.html" with name="first_name" type="text" id="id_first_name" field=form.first_name %}
+                {% include "includes/form_field.html" with name="last_name" type="text" id="id_last_name" field=form.last_name %}
+            </div>
+            <div class="row row-cols-2">
+                {% include "includes/form_field.html" with name="username" type="text" id="id_username" field=form.username %}
+                {% include "includes/form_field.html" with name="email" type="text" id="id_email" field=form.email %}
+            </div>
+            <div class="row row-cols-2">
+                {% include "includes/form_field.html" with name="password1" type="password" id="id_password1" field=form.password1 %}
+                {% include "includes/form_field.html" with name="password2" type="password" id="id_password2" field=form.password2 %}
+            </div>
+            <button type="submit" class="btn btn-primary btn-block mb-4 col-12">Войти</button>
+        </form>
+    </div>
+{% endblock content %}

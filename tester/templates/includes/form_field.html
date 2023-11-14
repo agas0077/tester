@@ -1,0 +1,27 @@
+<div class="form-outline mb-4">
+    {{ field.label_tag }}
+    {% if rows %}
+        <textarea name={{ name }} id="{{ id }}" class="form-control" rows={% if rows %}{{ rows }}{% else %}1{% endif %}>{% if value %}{{ value }}{% endif %}</textarea>
+    {% elif type == 'file' %}
+        <input name={{ name }} type="file" class="form-control custom-file-input" id="{{ id }}" value="{% if value %}{{ value }}{% endif %}" />
+    {% elif type == 'select' %}
+        {{ field.label }}:
+        <select class="col-1 form-select"
+                aria-label="Default select"
+                id="{{ id }}"
+                name="{{ name }}">
+            {% for choice, verbose in field.choices %}
+                <option value="{{ choice }}"
+                        {% if value %} {% if value == choice %} selected{% endif %}
+                        {% else %}
+                            {% if choice == '1' or choice == 'personal' %}selected{% endif %}
+                        {% endif %}>
+                    {{ verbose }}
+                </option>
+            {% endfor %}
+        </select>
+    {% else %}
+    <input name={{ name }} type={{ type }} id={{ id }} class="form-control" value="{% if value %}{{ value }}{% endif %}" />
+    {% endif %}
+    {% include "includes/error.html" with field=field %}
+</div>

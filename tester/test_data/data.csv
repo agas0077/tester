@@ -1,0 +1,73 @@
+name;description;question;answer;is_correct
+History Test;Test your knowledge on historical events;What year did World War II end? ;1943;FALSE
+History Test;Test your knowledge on historical events;What year did World War II end? ;1945;TRUE
+History Test;Test your knowledge on historical events;What year did World War II end? ;1950;FALSE
+History Test;Test your knowledge on historical events;What year did World War II end? ;1939;FALSE
+History Test;Test your knowledge on historical events;Who was the first president of the US?; George Washington ;FALSE
+History Test;Test your knowledge on historical events;Who was the first president of the US?; Thomas Jefferson ;FALSE
+History Test;Test your knowledge on historical events;Who was the first president of the US?; Abraham Lincoln ;FALSE
+History Test;Test your knowledge on historical events;Who was the first president of the US?; John Adams ;FALSE
+History Test;Test your knowledge on historical events;What is the capital of France?;Rome ;FALSE
+History Test;Test your knowledge on historical events;What is the capital of France?;Berlin ;FALSE
+History Test;Test your knowledge on historical events;What is the capital of France?;Paris ;TRUE
+History Test;Test your knowledge on historical events;What is the capital of France?;Madrid ;FALSE
+History Test;Test your knowledge on historical events;Who wrote "Romeo and Juliet"?; Charles Dickens ;FALSE
+History Test;Test your knowledge on historical events;Who wrote "Romeo and Juliet"?; Mark Twain ;FALSE
+History Test;Test your knowledge on historical events;Who wrote "Romeo and Juliet"?; William Shakespeare;TRUE
+History Test;Test your knowledge on historical events;Who wrote "Romeo and Juliet"?; Jane Austen ;FALSE
+History Test;Test your knowledge on historical events;What is the largest ocean in the world?; Atlantic Ocean ;FALSE
+History Test;Test your knowledge on historical events;What is the largest ocean in the world?; Indian Ocean ;FALSE
+History Test;Test your knowledge on historical events;What is the largest ocean in the world?; Pacific Ocean ;TRUE
+History Test;Test your knowledge on historical events;What is the largest ocean in the world?; Arctic Ocean ;FALSE
+Science Test;Test your knowledge on scientific facts;What is the chemical symbol for water?;H2O ;TRUE
+Science Test;Test your knowledge on scientific facts;What is the chemical symbol for water?;CO2 ;FALSE
+Science Test;Test your knowledge on scientific facts;What is the chemical symbol for water?;NaCl ;FALSE
+Science Test;Test your knowledge on scientific facts;What is the chemical symbol for water?;O2 ;FALSE
+Science Test;Test your knowledge on scientific facts;What is the boiling point of water in C?; 0 degrees ;FALSE
+Science Test;Test your knowledge on scientific facts;What is the boiling point of water in C?; 100 degrees ;TRUE
+Science Test;Test your knowledge on scientific facts;What is the boiling point of water in C?; 50 degrees ;FALSE
+Science Test;Test your knowledge on scientific facts;What is the boiling point of water in C?; 200 degrees ;FALSE
+Science Test;Test your knowledge on scientific facts;What is the closest planet to the sun?;Venus ;FALSE
+Science Test;Test your knowledge on scientific facts;What is the closest planet to the sun?;Earth ;FALSE
+Science Test;Test your knowledge on scientific facts;What is the closest planet to the sun?;Mars ;FALSE
+Science Test;Test your knowledge on scientific facts;What is the closest planet to the sun?;Mercury ;TRUE
+Science Test;Test your knowledge on scientific facts;What is the powerhouse of the cell?;Nucleus ;FALSE
+Science Test;Test your knowledge on scientific facts;What is the powerhouse of the cell?;Ribosome ;FALSE
+Science Test;Test your knowledge on scientific facts;What is the powerhouse of the cell?;Mitochondria ;TRUE
+Science Test;Test your knowledge on scientific facts;What is the powerhouse of the cell?;Endoplasmic Reticulum;FALSE
+Science Test;Test your knowledge on scientific facts;What is the process by which plants make their food called?; Respiration;FALSE
+Science Test;Test your knowledge on scientific facts;What is the process by which plants make their food called?; Digestion ;FALSE
+Science Test;Test your knowledge on scientific facts;What is the process by which plants make their food called?; Photosynthesis ;TRUE
+Science Test;Test your knowledge on scientific facts;What is the process by which plants make their food called?; Fermentation ;FALSE
+Geography Test;Test your knowledge on global geography;What is the longest river in the world?;Amazon River ;FALSE
+Geography Test;Test your knowledge on global geography;What is the longest river in the world?;Nile River ;TRUE
+Geography Test;Test your knowledge on global geography;What is the longest river in the world?;Mississippi River;FALSE
+Geography Test;Test your knowledge on global geography;What is the longest river in the world?;Yangtze River ;FALSE
+Geography Test;Test your knowledge on global geography;What is the capital of Australia?;Sydney ;FALSE
+Geography Test;Test your knowledge on global geography;What is the capital of Australia?;Melbourne ;FALSE
+Geography Test;Test your knowledge on global geography;What is the capital of Australia?;Perth ;FALSE
+Geography Test;Test your knowledge on global geography;What is the capital of Australia?;Canberra ;TRUE
+Geography Test;Test your knowledge on global geography;What is the highest mountain in the world?; Mount Kilimanjaro;FALSE
+Geography Test;Test your knowledge on global geography;What is the highest mountain in the world?; Mount Everest ;TRUE
+Geography Test;Test your knowledge on global geography;What is the highest mountain in the world?; K2 ;FALSE
+Geography Test;Test your knowledge on global geography;What is the highest mountain in the world?; Mount Fuji ;FALSE
+Geography Test;Test your knowledge on global geography;What is the largest desert in the world?;Gobi Desert ;FALSE
+Geography Test;Test your knowledge on global geography;What is the largest desert in the world?;Sahara Desert ;TRUE
+Geography Test;Test your knowledge on global geography;What is the largest desert in the world?;Kalahari Desert ;FALSE
+Geography Test;Test your knowledge on global geography;What is the largest desert in the world?;Arabian Desert ;FALSE
+Geography Test;Test your knowledge on global geography;What is the smallest country in the world?; Monaco ;FALSE
+Geography Test;Test your knowledge on global geography;What is the smallest country in the world?; Nauru ;FALSE
+Geography Test;Test your knowledge on global geography;What is the smallest country in the world?; San Marino ;FALSE
+Geography Test;Test your knowledge on global geography;What is the smallest country in the world?; Vatican City ;TRUE
+Multi Test;Test all knowlage;What is the longest river in the world?;Amazon River ;FALSE
+Multi Test;Test all knowlage;What is the longest river in the world?;Nile River ;TRUE
+Multi Test;Test all knowlage;What is the longest river in the world?;Mississippi River;FALSE
+Multi Test;Test all knowlage;What is the longest river in the world?;Yangtze River ;FALSE
+Multi Test;Test all knowlage;What is the chemical symbol for water?;H2O ;TRUE
+Multi Test;Test all knowlage;What is the chemical symbol for water?;CO2 ;FALSE
+Multi Test;Test all knowlage;What is the chemical symbol for water?;NaCl ;FALSE
+Multi Test;Test all knowlage;What is the chemical symbol for water?;O2 ;FALSE
+Multi Test;Test all knowlage;What year did World War II end? ;1943;FALSE
+Multi Test;Test all knowlage;What year did World War II end? ;1945;TRUE
+Multi Test;Test all knowlage;What year did World War II end? ;1950;FALSE
+Multi Test;Test all knowlage;What year did World War II end? ;1939;FALSE

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+      <form method="post" class="col-12">
+            {% comment %} action="{% url 'test-app:question' with test_pk=test_pk question_pk=question_pk %}" {% endcomment %}
+            {% csrf_token %}
+            <h2>{{ question.question }}</h2>
+            <br>
+            <br>
+            {% for answer in answers %}
+                  <input type="checkbox"
+                         id="answer_{{ answer.pk }}"
+                         name="answer_{{ answer.pk }}"
+                         value="{{ answer.pk }}" />
+                  <label for="answer_{{ answer.pk }}">{{ answer.answer }}</label>
+                  <br>
+            {% endfor %}
+            <input value="{{ question.pk }}" name="question" id="question" hidden>
+            <input value="{{ next_question_pk }}"
+                   name="next_question_pk"
+                   id="next_question_pk"
+                   hidden>
+            <br>
+            <button class="btn btn-primary align-self-right" type="submit">Submit answer</button>
+      </form>
+{% endblock content %}

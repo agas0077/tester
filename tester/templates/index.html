@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load template_tags %}
+{% block title %}
+    Tests List
+{% endblock title %}
+{% block content %}
+    <div class="row row-cols-3 g-3">
+        {% for test in object_list %}
+            <div class="col"
+                 onclick="window.location={% url 'test-app:test' test.pk %};">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ test.name }}</h5>
+                        <p class="card-text">{{ test.description }}</p>
+                        {% with test_pk=test.pk %}
+                            <p class="card-text">
+                                {{ results|get_item:test_pk|get_item:"user_result" }}
+                                / {{ results|get_item:test_pk|get_item:"questions_n" }}
+                            </p>
+                            <p class="card-text">{{ results|get_item:test_pk|get_item:"percentage" }}</p>
+                        {% endwith %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock content %}
