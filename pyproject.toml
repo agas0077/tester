@@ -1,0 +1,9 @@
+[tool.black]
+line-length = 79
+include = 'tester/.*.py'
+extend-exclude = '''
+(
+    migrations/* |
+    static/*
+)
+'''

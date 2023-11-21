@@ -1,4 +1,3 @@
-from deepdiff import DeepDiff
 from django.db.models import Count, Q
 from test_app.forms import UserResultForm
 from test_app.models import Answer, Question, QuestionAnswer, UserResult
